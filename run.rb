@@ -52,7 +52,7 @@ queries.each do |query|
 end
 
 
-matches = [{'name' => '(nothing...)'}] if matches.size == 0
+matches = {"nonres"=>{"Bid"=>"?", "Ask"=>"?", "Change"=>"?", "Open"=>"?", "High"=>"?", "Low"=>"?"}} if matches.size == 0
 
 items = matches.map do |pair, val|
   title = "[#{pair.scan(/\w{3}/).join('/')}] Bid: #{val['Bid']}, Ask: #{val['Ask']}"
