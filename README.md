@@ -1,0 +1,3 @@
+# Alfred FX Workflow
+
+stub
